@@ -1,0 +1,262 @@
+<html>
+
+<head>
+   <title>MOBIT</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <div class=" big_container">
+      <div class="container">
+         <center>
+            <div id="maindiv">
+               <h1>
+                  <kbd>WELCOME TO MOBILENET VS WOLFRAM</kbd>
+                  <img src="logo.gif" id="logo">
+               </h1>
+            </div>
+
+            <div style="display:flex; justify-content: center;">
+               <div class="col-sm-6 col-xs-6 main_div">
+                  <label style="color:grey;">UMPIRE IMAGE</label>
+                  <div id="camera"><img style="height:inherit; width:inherit;" src="./umpire1.jpeg">
+                     <div class="col-xs-12 footer_div">
+                        <h4>RESULT ON WOLFRAM--<span id="widimg1" class="text-primary">bottle</span></h4>
+                        <hr>
+                        <h4>RESULT ON MOBILENET--<span id="widimg1" class="text-primary"> water bottle</span></h4>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+            <div style="background:linear-gradient(to left,black,grey); color:white;">
+               <h1>RESULT</h1>
+               <hr>
+               <h2>BOTH ARE EQUALLY ACCURATE</h2>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div style="display:flex; justify-content: center;">
+               <div class="col-sm-6 col-xs-12 main_div">
+                  <label style="color:grey;">UMPIRE IMAGE</label>
+                  <div id="camera"><img style="height:inherit; width:inherit;" src="./Umpire2.jpg">
+                     <div class="col-xs-12 footer_div">
+                        <h4>RESULT ON WOLFRAM--<span id="widimg1" class="text-primary">airplane</span></h4>
+                        <hr>
+                        <h4>RESULT ON MOBILENET--<span id="widimg1" class="text-primary">airliner</span></h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div style="background:linear-gradient(to left,black,grey); color:white;">
+               <h1>RESULT</h1>
+               <hr>
+               <h2>BOTH ARE EQUALLY ACCURATE</h2>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div style="display:flex; justify-content: center;">
+               <div class="col-sm-6 col-xs-12 main_div">
+                  <label style="color:grey;">UMPIRE IMAGE</label>
+                  <div id="camera"><img style="height:inherit; width:inherit;" src="./UMPIRE3.jpeg">
+                     <div class="col-xs-12 footer_div">
+                        <h4>RESULT ON WOLFRAM--<span id="widimg1" class="text-primary">Speaker</span></h4>
+                        <hr>
+                        <h4>RESULT ON MOBILENET--<span id="widimg1" class="text-primary"> desktop computer</span></h4>
+                     </div>
+                  </div> <br>
+                  <hr>
+                  <br>
+
+               </div>
+            </div>
+            <div style="background:linear-gradient(to left,black,grey); color:white;">
+               <h1>RESULT</h1>
+               <hr>
+               <h2>WOLFRAM IS MORE ACCURATE</h2>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div style="display:flex; justify-content: center;">
+               <div class="col-sm-6 col-xs-12 main_div">
+                  <label style="color:grey;">UMPIRE IMAGE</label>
+                  <div id="camera"><img style="height:inherit; width:inherit;" src="./UMPIRE-4.jpeg">
+                     <div class="col-xs-12 footer_div">
+                        <h4>RESULT ON WOLFRAM--<span id="widimg1" class="text-primary">glass</span></h4>
+                        <hr>
+                        <h4>RESULT ON MOBILENET--<span id="widimg1" class="text-primary"> beer glass</span></h4>
+                     </div>
+                  </div>
+                  <br>
+                  <hr>
+                  <br>
+
+               </div>
+            </div>
+            <div style="background:linear-gradient(to left,black,grey); color:white;">
+               <h1>RESULT</h1>
+               <hr>
+               <h2>WOLFRAM IS MORE ACCURATE</h2>
+            </div>
+            <div style="display:flex; justify-content: center;">
+               <div class="col-sm-6 col-xs-12 main_div">
+                  <label style="color:grey;">UMPIRE IMAGE</label>
+                  <div id="camera"><img style="height:inherit; width:inherit;" src="./UMPIRE5.jpeg">
+                     <div class="col-xs-12 footer_div">
+                        <h4>RESULT ON WOLFRAM--<span id="widimg1" class="text-primary">keyboard</span></h4>
+                        <hr>
+                        <h4>RESULT ON MOBILENET--<span id="widimg1" class="text-primary">notebook computer</span></h4>
+                     </div>
+                  </div> <br>
+                  <hr>
+                  <br>
+
+               </div>
+            </div>
+            <div style="background:linear-gradient(to left,black,grey); color:white;">
+               <h1>RESULT</h1>
+               <hr>
+               <h2>WOLFRAM IS MORE ACCURATE</h2>
+            </div>
+            <div style="display:flex; justify-content: center;">
+               <div class="col-sm-6 col-xs-12 main_div">
+                  <label style="color:grey;">UMPIRE IMAGE</label>
+                  <div id="camera"><img style="height:inherit; width:inherit;" src="./UMPIRE6.jpeg">
+                     <div class="col-xs-12 footer_div">
+                        <h4>RESULT ON WOLFRAM--<span id="widimg1" class="text-primary">bed room</span></h4>
+                        <hr>
+                        <h4>RESULT ON MOBILENET--<span id="widimg1" class="text-primary">four-poster</span></h4>
+                     </div>
+                  </div> <br>
+                  <hr>
+                  <br>
+
+               </div>
+            </div>
+            <div style="background:linear-gradient(to left,black,grey); color:white;">
+               <h1>RESULT</h1>
+               <hr>
+               <h2>WOLFRAM IS MORE ACCURATE</h2>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div style="display:flex; justify-content: center;">
+               <div class="col-sm-6 col-xs-12 main_div">
+                  <label style="color:grey;">UMPIRE IMAGE</label>
+                  <div id="camera"><img style="height:inherit; width:inherit;" src="./UMPIRE7.jpeg">
+                     <div class="col-xs-12 footer_div">
+                        <h4>RESULT ON WOLFRAM--<span id="widimg1" class="text-primary">pillow_cover</span></h4>
+                        <hr>
+                        <h4>RESULT ON MOBILENET--<span id="widimg1" class="text-primary"> packet</span></h4>
+                     </div>
+                  </div> <br>
+                  <hr>
+                  <br>
+
+               </div>
+            </div>
+            <div style="background:linear-gradient(to left,black,grey); color:white;">
+               <h1>RESULT</h1>
+               <hr>
+               <h2>WOLFRAM IS MORE ACCURATE</h2>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div style="display:flex; justify-content: center;">
+               <div class="col-sm-6 col-xs-12 main_div">
+                  <label style="color:grey;">UMPIRE IMAGE</label>
+                  <div id="camera"><img style="height:inherit; width:inherit;" src="./UMPIRE8.jpg">
+                     <div class="col-xs-12 footer_div">
+                        <h4>RESULT ON WOLFRAM--<span id="widimg1" class="text-primary">cat</span></h4>
+                        <hr>
+                        <h4>RESULT ON MOBILENET--<span id="widimg1" class="text-primary">Egyptian cat</span></h4>
+                     </div>
+                  </div> <br>
+                  <hr>
+                  <br>
+
+               </div>
+            </div>
+            <div style="background:linear-gradient(to left,black,grey); color:white;">
+               <h1>RESULT</h1>
+               <hr>
+               <h2>MOBILENET IS MORE ACCURATE</h2>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div style="display:flex; justify-content: center;">
+               <div class="col-sm-6 col-xs-12 main_div">
+                  <label style="color:grey;">UMPIRE IMAGE</label>
+                  <div id="camera"><img style="height:inherit; width:inherit;" src="./UMPIRE9.jpg">
+                     <div class="col-xs-12 footer_div">
+                        <h4>RESULT ON WOLFRAM--<span id="widimg1" class="text-primary">light bulb</span></h4>
+                        <hr>
+                        <h4>RESULT ON MOBILENET--<span id="widimg1" class="text-primary"> soap dispenser</span></h4>
+                     </div>
+                  </div> <br>
+                  <hr>
+                  <br>
+
+               </div>
+            </div>
+            <div style="background:linear-gradient(to left,black,grey); color:white;">
+               <h1>RESULT</h1>
+               <hr>
+               <h2>WOLFRAM IS MORE ACCURATE</h2>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div style="display:flex; justify-content: center;">
+               <div class="col-sm-6 col-xs-12 main_div">
+                  <label style="color:grey;">UMPIRE IMAGE</label>
+                  <div id="camera"><img style="height:inherit; width:inherit;" src="./UMPIRE10.jpg">
+                     <div class="col-xs-12 footer_div">
+                        <h4>RESULT ON WOLFRAM--<span id="widimg1" class="text-primary">outdoor_waterside</span></h4>
+                        <hr>
+                        <h4>RESULT ON MOBILENET--<span id="widimg1" class="text-primary"> lakeside, lakeshore</span>
+                        </h4>
+                     </div>
+                  </div> <br>
+                  <hr>
+                  <br>
+
+               </div>
+            </div>
+            <div style="background:linear-gradient(to left,black,grey); color:white;">
+               <h1>RESULT</h1>
+               <hr>
+               <h2>MOBILENET IS MORE ACCURATE</h2>
+            </div>
+            <div style="background:linear-gradient(to left,darkgreen,blue); color:white;">
+               <h1>FINAL RESULT</h1>
+               <hr>
+               <h2>I used 10 images to compare wolfram and mobilet. There was a tie in 2 cases. Mobilenet won 2 matches and Wlfram won 6 matches.
+                  <hr>
+               <hr><h1 style="color:lime">WOLFRAM<h1 class="text-danger">WON THE COMPETETION BY 6 MATCHES.</h1> </h1> </h2>
+            </div>
+            <br>
+            <hr>
+            <br>
+         </center>
+      </div>
+
+
+
+   </div>
+
+</body>
+
+</html>
